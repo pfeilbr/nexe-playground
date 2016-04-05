@@ -1,0 +1,33 @@
+{
+  "name": "nexe-playground",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nexe": "^1.1.0"
+  },
+
+  "nexe": {
+      "input": "./index.js",
+      "output": "./main.nex",
+      "temp": "./tmp",
+      "browserify": {
+          "requires": [],
+          "excludes": [],
+          "paths": []
+      },
+      "runtime": {
+          "framework": "node",
+          "version": "4.2.4",
+          "js-flags": "--use_strict",
+          "ignoreFlags": true
+      }
+  }
+
+}
